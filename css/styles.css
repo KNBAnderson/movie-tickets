@@ -1,3 +1,6 @@
 img {
   max-height: 500px;
 }
+ #results, #price {
+   display: none;
+ }

@@ -16,7 +16,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See this movie</a>
+          <button type='button' class="btn btn-dark" value="PetSematary">See this movie</button>
         </div>
     </div>
 
@@ -25,7 +25,7 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">See this movie</a>
+        <button type='button' class="btn btn-dark" value="SoylentGreen">See this movie</button>
       </div>
     </div>
 
@@ -34,9 +34,33 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">See this movie</a>
+        <button type='button' class="btn btn-dark" value="Gremlins2">See this movie</button>
       </div>
     </div>
+  </div>
+
+  <div id="results">
+    <form>
+
+      <div class="form-group">
+        <label for="time">Which showtime are you interested in:</label><br>
+        <input type="radio" name="time" value="matinee">9:00 AM <br>
+        <input type="radio" name="time" value="matinee">12:00 PM <br>
+        <input type="radio" name="time" value="regular">5:00 PM <br>
+        <input type="radio" name="time" value="regular">7:00 pm <br>
+        <input type="radio" name="time" value="regular">9:00 PM <br>
+      </div>
+
+      <div class="form-group">
+        <label for="age">How old are you?</label>
+        <input type="number" id='age' name="age" max=100>
+      </div>
+      <button type="submit" name="finish">Get tickets</button>
+    </form>
+  </div>
+
+  <div id="price">
+    <p>Your total is <span id='total'></span></p>
   </div>
 
 </body>
